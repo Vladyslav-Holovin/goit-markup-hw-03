@@ -4,6 +4,24 @@ body {
   background-color: #ffffff;
 }
 
+/*Visually Hidden Pattern Start*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Visually Hidden Patter End*/
+
 /*Clear Styles Start*/
 
 * {
@@ -147,11 +165,11 @@ img {
 
 .hero {
   background: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-wrap {
-  padding-top: 68px;
-  padding-bottom: 68px;
   text-align: center;
 }
 
@@ -169,6 +187,9 @@ img {
 }
 
 .hero-order-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
   background: #4d5ae5;
   font-weight: 500;
   line-height: 1.5;
@@ -177,6 +198,7 @@ img {
   cursor: pointer;
   border-radius: 4px;
   padding: 16px 32px;
+  margin: 0 auto;
 }
 
 .hero-order-btn:hover,
@@ -251,7 +273,7 @@ img {
 }
 
 .team-list-item-wrapper {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team-list-image {
@@ -343,6 +365,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-colored {
@@ -353,7 +377,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;
   max-width: 264px;
 }
 
