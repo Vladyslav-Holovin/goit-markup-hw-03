@@ -42,6 +42,12 @@ button {
   outline: inherit;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*Clear Styles End*/
 
 /*Container Size&Indent Styles Start*/
@@ -53,13 +59,17 @@ button {
 
 .container {
   /*Added Padding (left/right) 15px (final element width 1158px)*/
-  width: 1128px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
 /*Container Size&Indent Styles Start*/
+
+.flex-wrapper {
+  display: flex;
+}
 
 /*Header Start*/
 
@@ -70,6 +80,9 @@ button {
 }
 
 .header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .header-logo {
@@ -80,6 +93,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .header-logo-colored {
@@ -87,6 +101,8 @@ button {
 }
 
 .header-menu-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-menu-item {
@@ -109,6 +125,8 @@ button {
 }
 
 .header-address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-address-link {
@@ -159,7 +177,6 @@ button {
   cursor: pointer;
   border-radius: 4px;
   padding: 16px 32px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hero-order-btn:hover,
@@ -174,14 +191,20 @@ button {
 .services {
 }
 
+.services .container {
+}
+
 .services-title {
   visibility: hidden;
 }
 
 .services-list {
+  display: flex;
+  gap: 24px;
 }
 
 .services-list-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .services-list-title {
@@ -217,13 +240,14 @@ button {
 }
 
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-list-item {
   background: #ffffff;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .team-list-item-wrapper {
@@ -267,9 +291,14 @@ button {
 }
 
 .portfolio-list {
+  display: flex;
+  row-gap: 48px;
+  column-gap: 24px;
+  flex-wrap: wrap;
 }
 
 .portfolio-list-item {
+  width: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-list-image {
