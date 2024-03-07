@@ -92,7 +92,6 @@ img {
 /*Header Start*/
 
 .header {
-  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -123,6 +122,7 @@ img {
 }
 
 .header-menu-item {
+  padding: 24px 0;
 }
 
 .header-menu-link {
