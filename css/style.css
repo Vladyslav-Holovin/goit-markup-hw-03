@@ -87,6 +87,8 @@ img {
 
 .flex-wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*Header Start*/
@@ -98,7 +100,6 @@ img {
 .header-navigation {
   display: flex;
   align-items: center;
-  flex-grow: 1;
 }
 
 .header-logo {
